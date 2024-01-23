@@ -12,7 +12,7 @@
             </div>
         </form>
         <ul class="navbar-nav">
-           
+
 </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,9 +198,9 @@
                     </div>
     <ul class="list-unstyled p-1">
       <li class="dropdown-item py-2">
-        <a href="pages/general/profile.html" class="text-body ms-0">
+        <a href="{{ route('admin.profile') }}" class="text-body ms-0">
           <i class="me-2 icon-md" data-feather="user"></i>
-          <span>Profile</span>
+          <span>Profile</span> 
         </a>
       </li>
       <li class="dropdown-item py-2">
