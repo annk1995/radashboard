@@ -12,7 +12,9 @@ class AdminController extends Controller
 {
     //
     public function AdminDashboard(){
-        return view ('admin.index');
+        $id=Auth::user()->id;
+        $profileData =User::find($id);
+        return view ('admin.index',compact('profileData'));
     }
     public function AdminLogout(Request $request)
     {
@@ -37,10 +39,15 @@ class AdminController extends Controller
         $id=Auth::user()->id;
         $data =User::find($id);
         $data ->username = $request ->username;
-        $data ->name = $request ->name;
+
+        // dd($data->name);
+
+        // $data ->name = $request ->name;
+         $data->name = $request->has('name') ? $request->name : null;
         $data ->email = $request ->email;
         $data ->phone = $request ->phone;
         $data ->address = $request ->address;
+        // $data->name = $request->has('name') ? $request->name : null;
 
         if ($request -> file('photo')) {
            $file =$request ->file('photo');
@@ -55,5 +62,10 @@ class AdminController extends Controller
             'alert-type' => 'success'
         );
         return redirect()->back()->with($notification);
+    }
+    public function AdminChangePassword(){
+        $id=Auth::user()->id;
+       $profileData =User::find($id);
+        return view('admin.admin_change_password',compact('profileData'));
     }
 }
