@@ -151,7 +151,7 @@
       </a>
       <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
         <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
-          <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="userr">
+          <img class="wd-30 ht-30 rounded-circle" src="{{ (!empty($profileData->photo)) ? url('upload/admin_images/'.$profileData->photo) : url('upload/no_image.jpg') }}" alt="userr">
         </div>
         <div class="flex-grow-1 me-2">
                                 <p>New customer registered</p>
@@ -196,8 +196,8 @@
                             <img class="wd-80 ht-80 rounded-circle" src="{{ (!empty($profileData->photo)) ? url('upload/admin_images/'.$profileData->photo) : url('upload/no_image.jpg') }}"  alt="">
                         </div>
                         <div class="text-center">
-                            <p class="tx-16 fw-bolder">kabui kariuki</p>
-                            <p class="tx-12 text-muted">kabuikariuki052@gmail.com</p>
+                            <p class="tx-16 fw-bolder">{{ $profileData -> name }}</p>
+                            <p class="tx-12 text-muted">{{ $profileData -> email }}</p>
                         </div>
                     </div>
     <ul class="list-unstyled p-1">
