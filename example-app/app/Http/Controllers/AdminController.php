@@ -87,7 +87,7 @@ class AdminController extends Controller
 
         };
         //update the neew password
-        user::WhereId(auth()->user()->id)->update([
+        User::findOrFail(auth()->user()->id)->update([
             'password'=>Hash::make($request->new_password)
         ]);
         $notification =array(

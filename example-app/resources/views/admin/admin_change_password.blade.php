@@ -60,6 +60,7 @@
                 <form method="POST"  action="{{ route('admin.update.password') }}"class="forms-sample" enctype="multipart/form-data">
                     @csrf
 
+
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Old password</label>
                         <input type="password" class="form-control @error('old_password') is_invalid @enderror " name="old_password" id="old_password" autocomplete="off" >
