@@ -43,15 +43,13 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-5">
                         <div class="topbar-left">
-                            <div class="topbar-text">
-                                Monday, March 22, 2020
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-7">
                         <div class="list-unstyled topbar-right">
                             <ul class="topbar-link">
-                                <li><a href="#" title="">Career</a></li>
+
                                 <li><a href="#" title="">Contact Us</a></li>
                                 <li><a href="#" title="">Login / Register</a></li>
                             </ul>
@@ -75,7 +73,7 @@
         <nav class="navbar navbar-hover navbar-expand-lg navbar-soft">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logo-blue-stiky.png" alt="" class="img-fluid">
+                    <img src="{{ asset('site/assets/images/logo-blue-stiky.png') }}" alt="" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav99">
                     <span class="navbar-toggler-icon"></span>
@@ -204,7 +202,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item banner-max-height active">
-                            <img class="d-block w-100" src="images/bg19.jpg" alt="First slide">
+                            <img class="d-block w-100" src="{{ asset('site/assets/images/bg19.jpg') }}" alt="First slide">
                             <div class="carousel-caption banner__slide-overlay d-flex h-100">
                                 <div class="carousel__content">
                                     <div class="container">
@@ -230,7 +228,7 @@
                             </div>
                         </div>
                         <div class="carousel-item banner-max-height">
-                            <img class="d-block w-100" src="images/bg.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="{{ asset('site/assets/images/bg.jpg') }}" alt="Second slide">
                             <div class="carousel-caption banner__slide-overlay d-flex h-100">
                                 <div class="carousel__content">
                                     <div class="container">
