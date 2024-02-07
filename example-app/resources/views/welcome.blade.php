@@ -16,7 +16,7 @@
         <meta name="description" content="Rethouse - Real Estate HTML Template">
         <meta name="keywords" content="Real Estate, Property, Directory Listing, Marketing, Agency">
         <meta name="author" content="mardianto - retenvi.com">
-        <title>Rethouse - Real Estate HTML Template</title>
+        <title>Rileys Real E</title>
 
         <!-- Facebook and Twitter integration -->
         <meta property="og:title" content="">
@@ -51,7 +51,7 @@
                             <ul class="topbar-link">
 
                                 <li><a href="#" title="">Contact Us</a></li>
-                                <li><a href="#" title="">Login / Register</a></li>
+                                <li><a href="{{ route('admin.login') }}" title="">Login / Register</a></li>
                             </ul>
                             <ul class="topbar-sosmed">
                                 <li>
@@ -81,79 +81,11 @@
                 <div class="collapse navbar-collapse" id="main_nav99">
                     <ul class="navbar-nav  mx-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" data-toggle="dropdown"> Home </a>
-                            <ul class="dropdown-menu dropdown-menu-left animate fade-up">
-                                <li><a class="dropdown-item" href="/homepage-v1"> Home version one </a>
-                                </li>
-                                <li><a class="dropdown-item" href="/homepage-v2"> Home version two </a></li>
-                                <li><a class="dropdown-item" href="/homepage-v3"> Home version three </a></li>
-                                <li><a class="dropdown-item" href="/homepage-v4"> Home version four </a></li>
-                                <li><a class="dropdown-item" href="/homepage-v5"> Home version five </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Pages </a>
-                            <ul class="dropdown-menu animate fade-up">
+                            <a class="nav-link active " href="#" > Home </a>
 
-                                <li><a class="dropdown-item icon-arrow" href="#"> Property Listing </a>
-                                    <ul class="submenu dropdown-menu  animate fade-up">
-                                        <li><a class="dropdown-item" href="/listing-style-v1"> Style 1</a></li>
-                                        <li><a class="dropdown-item" href="/listing-style-v2"> Style 2</a></li>
-                                        <li><a class="dropdown-item" href="/listing-style-v3"> Style 3</a></li>
-                                        <li><a class="dropdown-item" href="/listing-style-v4"> Style 4</a></li>
-                                        <li><a class="dropdown-item" href="/listing-style-v5"> Style 5</a></li>
-                                        <li><a class="dropdown-item icon-arrow" href="">Submenu item 3 </a>
-                                            <ul class="submenu dropdown-menu  animate fade-up">
-                                                <li><a class="dropdown-item" href="">Multi level 1</a></li>
-                                                <li><a class="dropdown-item" href="">Multi level 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item" href="">Submenu item 4</a></li>
-                                        <li><a class="dropdown-item" href="">Submenu item 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item icon-arrow" href="#"> Property single detail </a>
-                                    <ul class="submenu dropdown-menu  animate fade-up">
-                                        <li><a class="dropdown-item" href="/single-detail-v1">Style 1</a></li>
-                                        <li><a class="dropdown-item" href="/single-detail-v2">Style 2</a></li>
-                                        <li><a class="dropdown-item" href="/single-detail-v3">Style 3</a></li>
-                                        <li><a class="dropdown-item" href="/single-detail-v4">Style 4</a></li>
-                                        <li><a class="dropdown-item" href="/single-detail-v5">Style 5</a></li>
-                                    </ul>
-
-                                </li>
-
-                                <li><a class="dropdown-item icon-arrow" href="#"> Agent </a>
-                                    <ul class="submenu dropdown-menu  animate fade-up">
-                                        <li><a class="dropdown-item" href="/agents-v1">Style 1</a></li>
-                                        <li><a class="dropdown-item" href="/agents-v2">Style 2</a></li>
-                                        <li><a class="dropdown-item" href="/agents-detail">Agent detail</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item icon-arrow" href="#"> Agency </a>
-                                    <ul class="submenu dropdown-menu  animate fade-up">
-                                        <li><a class="dropdown-item" href="/agency-v1">Style 1</a></li>
-                                        <li><a class="dropdown-item" href="/agency-v2">Style 2</a></li>
-                                        <li><a class="dropdown-item" href="/agency-detail">Agency detail</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item" href="/about-us">About us </a>
-                                </li><li><a class="dropdown-item" href="/login">Login </a>
-                                </li><li><a class="dropdown-item" href="/register"> Register </a>
-                                </li><li><a class="dropdown-item" href="/contact"> Contact </a>
-                                </li><li><a class="dropdown-item" href="/404"> 404 Error </a>
-                            </li></ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" data-toggle="dropdown"> Blog </a>
-                            <ul class="dropdown-menu dropdown-menu-left animate fade-up">
-                                <li><a class="dropdown-item" href="/blog"> Blog </a>
-                                </li>
-                                <li><a class="dropdown-item" href="/blog-single"> Blog Single </a></li>
-
-                            </ul>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/contact"> Services </a></li>
 
                         <li class="nav-item"><a class="nav-link" href="/contact"> contact </a></li>
                     </ul>
@@ -202,7 +134,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item banner-max-height active">
-                            <img class="d-block w-100" src="{{ asset('site/assets/images/bg19.jpg') }}" alt="First slide">
+                            <img class="d-block w-100" src="{{ asset('site/assets/images/bg15.jpg') }}" alt="First slide">
                             <div class="carousel-caption banner__slide-overlay d-flex h-100">
                                 <div class="carousel__content">
                                     <div class="container">
@@ -253,7 +185,7 @@
                             </div>
                         </div>
                         <div class="carousel-item banner-max-height">
-                            <img class="d-block w-100" src="images/bg15.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="{{ asset('site/assets/images/bg19.jpg') }}" alt="Third slide">
                             <div class="carousel-caption banner__slide-overlay d-flex h-100">
                                 <div class="carousel__content">
                                     <div class="container">

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Agentcontroller;
+use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -46,3 +47,4 @@ Route::middleware(['auth','role:agent'])->group(function(){
 Route::get('/agent/dashboard', [Agentcontroller::class,'AgentDashboard'])->name('agent.dashboard');
 });
 Route::get('/admin/login', [AdminController::class,'AdminLogin'])->name('admin.login');
+

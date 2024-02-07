@@ -1,123 +1,488 @@
 <!DOCTYPE html>
-<!--
-Template Name: NobleUI - HTML Bootstrap 5 Admin Dashboard Template
-Author: NobleUI
-Website: https://www.nobleui.com
-Portfolio: https://themeforest.net/user/nobleui/portfolio
-Contact: nobleui123@gmail.com
-Purchase: https://1.envato.market/nobleui_admin
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Responsive HTML Admin Dashboard Template based on Bootstrap 5">
-	<meta name="author" content="NobleUI">
-	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
-	<title>Admin Login</title>
-    <style type="text/css">
-        .authlogin-side-wrapper{
-            width: 100%;
-            height:100%;
-            background-image: url({{ asset('upload/login.png') }})
-        }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rethouse - Real Estate HTML Template">
+    <meta name="keywords" content="Real Estate, Property, Directory Listing, Marketing, Agency" />
+    <meta name="author" content="mardianto - retenvi.com">
+    <title>Rethouse - Real Estate HTML Template</title>
 
-    </style>
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <!-- End fonts -->
-
-	<!-- core:css -->
-	<link rel="stylesheet" href="{{ asset('backend/assets/vendors/core/core.css') }}">
-	<!-- endinject -->
-
-	<!-- Plugin css for this page -->
-	<!-- End plugin css for this page -->
-
-	<!-- inject:css -->
-	<link rel="stylesheet" href="{{ asset('backend/assets/fonts/feather-font/css/iconfont.css') }}">
-	<link rel="stylesheet" href="{{ asset('backend/assets/vendors/flag-icon-css/css/flag-icon.min.css') }}">
-	<!-- endinject -->
-
-  <!-- Layout styles -->
-	<link rel="stylesheet" href="{{ asset('backend/assets/css/demo2/style.css') }}">
-  <!-- End layout styles -->
-
-  <link rel="shortcut icon" href="{{ asset('.backend/assets/images/favicon.png') }}" />
+    <link rel="manifest" href="site.webmanifest">
+    <!-- favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="theme-color" content="#3454d1">
+    <link href="{{ asset('site/assets/css/styles.css') }}" rel="stylesheet">
 </head>
+
 <body>
-	<div class="main-wrapper">
-		<div class="page-wrapper full-page">
-			<div class="page-content d-flex align-items-center justify-content-center">
-
-				<div class="row w-100 mx-0 auth-page">
-					<div class="col-md-8 col-xl-6 mx-auto">
-						<div class="card">
-							<div class="row">
-                <div class="col-md-4 pe-md-0">
-                  <div class="authlogin-side-wrapper">
-
-                  </div>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR TOP -->
+        <div class="topbar d-none d-sm-block">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                        <div class="topbar-left">
+                            <div class="topbar-text">
+                                Monday, March 22, 2020
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="list-unstyled topbar-right">
+                            <ul class="topbar-link">
+                                <li><a href="#" title="">Career</a></li>
+                                <li><a href="#" title="">Contact Us</a></li>
+                                <li><a href="#" title="">Login / Register</a></li>
+                            </ul>
+                            <ul class="topbar-sosmed">
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8 ps-md-0">
-                  <div class="auth-form-wrapper px-4 py-5">
-                    <a href="#" class="noble-ui-logo logo-light d-block mb-2">Riley<span>R.estate</span></a>
-                    <h5 class="text-muted fw-normal mb-4">Welcome back! Log in to your account.</h5>
-                    <form class="forms-sample" method="POST" action="{{  route('login')  }}">
-                        @csrf
-                      <div class="mb-3">
-                        <label for="login" class="form-label">Email/Name/Phone </label>
-                        <input type="text" class="form-control" name="login" id="login" placeholder="Email">
-                      </div>
-                      <div class="mb-3">
-                        <label for="userPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" name='password'autocomplete="current-password" placeholder="Password">
-                      </div>
-                      <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" id="authCheck">
-                        <label class="form-check-label" for="authCheck">
-                          Remember me
-                        </label>
-                      </div>
-                      <div>
+            </div>
+        </div>
+        <!-- END NAVBAR TOP -->
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-hover navbar-expand-lg navbar-soft">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo-blue-stiky.png" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav99">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav99">
+                    <ul class="navbar-nav  mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" data-toggle="dropdown"> Home </a>
+                            <ul class="dropdown-menu dropdown-menu-left animate fade-up">
+                                <li><a class='dropdown-item' href='/homepage-v1'> Home version one </a>
+                                </li>
+                                <li><a class='dropdown-item' href='/homepage-v2'> Home version two </a></li>
+                                <li><a class='dropdown-item' href='/homepage-v3'> Home version three </a></li>
+                                <li><a class='dropdown-item' href='/homepage-v4'> Home version four </a></li>
+                                <li><a class='dropdown-item' href='/homepage-v5'> Home version five </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Pages </a>
+                            <ul class="dropdown-menu animate fade-up">
 
-                        <button type="submit" class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
-                                Login
-                        </button>
-                      </div>
-                      <a href="register.html" class="d-block mt-3 text-muted">Not a user? Sign up</a>
-                    </form>
-                  </div>
+                                <li><a class="dropdown-item icon-arrow" href="#"> Property Listing </a>
+                                    <ul class="submenu dropdown-menu  animate fade-up">
+                                        <li><a class='dropdown-item' href='/listing-style-v1'> Style 1</a></li>
+                                        <li><a class='dropdown-item' href='/listing-style-v2'> Style 2</a></li>
+                                        <li><a class='dropdown-item' href='/listing-style-v3'> Style 3</a></li>
+                                        <li><a class='dropdown-item' href='/listing-style-v4'> Style 4</a></li>
+                                        <li><a class='dropdown-item' href='/listing-style-v5'> Style 5</a></li>
+                                        <li><a class="dropdown-item icon-arrow" href="">Submenu item 3 </a>
+                                            <ul class="submenu dropdown-menu  animate fade-up">
+                                                <li><a class="dropdown-item" href="">Multi level 1</a></li>
+                                                <li><a class="dropdown-item" href="">Multi level 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="">Submenu item 4</a></li>
+                                        <li><a class="dropdown-item" href="">Submenu item 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item icon-arrow" href="#"> Property single detail </a>
+                                    <ul class="submenu dropdown-menu  animate fade-up">
+                                        <li><a class='dropdown-item' href='/single-detail-v1'>Style 1</a></li>
+                                        <li><a class='dropdown-item' href='/single-detail-v2'>Style 2</a></li>
+                                        <li><a class='dropdown-item' href='/single-detail-v3'>Style 3</a></li>
+                                        <li><a class='dropdown-item' href='/single-detail-v4'>Style 4</a></li>
+                                        <li><a class='dropdown-item' href='/single-detail-v5'>Style 5</a></li>
+                                    </ul>
+
+                                </li>
+
+                                <li><a class="dropdown-item icon-arrow" href="#"> Agent </a>
+                                    <ul class="submenu dropdown-menu  animate fade-up">
+                                        <li><a class='dropdown-item' href='/agents-v1'>Style 1</a></li>
+                                        <li><a class='dropdown-item' href='/agents-v2'>Style 2</a></li>
+                                        <li><a class='dropdown-item' href='/agents-detail'>Agent detail</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item icon-arrow" href="#"> Agency </a>
+                                    <ul class="submenu dropdown-menu  animate fade-up">
+                                        <li><a class='dropdown-item' href='/agency-v1'>Style 1</a></li>
+                                        <li><a class='dropdown-item' href='/agency-v2'>Style 2</a></li>
+                                        <li><a class='dropdown-item' href='/agency-detail'>Agency detail</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class='dropdown-item' href='/about-us'>About us </a>
+                                <li><a class='dropdown-item' href='/login'>Login </a>
+                                <li><a class='dropdown-item' href='/register'> Register </a>
+                                <li><a class='dropdown-item' href='/contact'> Contact </a>
+                                <li><a class='dropdown-item' href='/404'> 404 Error </a>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" data-toggle="dropdown"> Blog
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left animate fade-up">
+                                <li><a class='dropdown-item' href='/blog'> Blog </a>
+                                </li>
+                                <li><a class='dropdown-item' href='/blog-single'> Blog Single </a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class='nav-link' href='/contact'> contact </a></li>
+                    </ul>
+
+
+                    <!-- Search bar.// -->
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="#" class="btn btn-primary text-capitalize">
+                                <i class="fa fa-plus-circle mr-1"></i> add listing</a>
+                        </li>
+                    </ul>
+                    <!-- Search content bar.// -->
+                    <div class="top-search navigation-shadow">
+                        <div class="container">
+                            <div class="input-group ">
+                                <form action="#">
+
+                                    <div class="row no-gutters mt-3">
+                                        <div class="col">
+                                            <input class="form-control border-secondary border-right-0 rounded-0"
+                                                type="search" value="" placeholder="Search "
+                                                id="example-search-input4">
+                                        </div>
+                                        <div class="col-auto">
+                                            <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
+                                                href="/search-result.html">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Search content bar.// -->
+                </div> <!-- navbar-collapse.// -->
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- BREADCRUMB -->
+        <div class="bg-theme-overlay">
+            <section class="section__breadcrumb ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="text-capitalize text-white">login</h2>
+                            <ul class="list-inline ">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        home
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        page
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        login
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-						</div>
-					</div>
-				</div>
+            </section>
+        </div>
+        <!-- END BREADCRUMB -->
+    </header>
+    <div class="clearfix"></div>
 
-			</div>
-		</div>
-	</div>
+    <!-- LISTING LIST -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Form Login -->
+                    <div class="card mx-auto" style="max-width: 380px;">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Sign in</h4>
+                            <form method="POST" action="{{  route('login')  }}">
+                                <a href="#" class="btn btn-facebook btn-block mb-2 text-white"> <i
+                                        class="fa fa-facebook"></i> &nbsp; Sign
+                                    in
+                                    with
+                                    Facebook</a>
+                                <a href="#" class="btn btn-primary btn-block mb-4"> <i
+                                        class="fa fa-google"></i> &nbsp;
+                                    Sign in with
+                                    Google</a>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Username" type="text">
+                                </div> <!-- form-group// -->
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" type="password">
+                                </div> <!-- form-group// -->
 
-	<!-- core:js -->
-	<script src="{{ asset('backend/assets/vendors/core/core.js') }}"></script>
-	<!-- endinject -->
+                                <div class="form-group">
+                                    <a href="#" class="float-right">Forgot password?</a>
+                                    <label class="float-left custom-control custom-checkbox"> <input type="checkbox"
+                                            class="custom-control-input" checked="">
+                                        <span class="custom-control-label"> Remember </span>
+                                    </label>
+                                </div> <!-- form-group form-check .// -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                                </div> <!-- form-group// -->
+                            </form>
+                        </div> <!-- card-body.// -->
+                    </div> <!-- card .// -->
 
-	<!-- Plugin js for this page -->
-	<!-- End plugin js for this page -->
+                    <p class="text-center mt-4">Don't have account? <a href="#">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END LISTING LIST -->
 
-	<!-- inject:js -->
-	<script src="{{ asset('backend/assets/vendors/feather-icons/feather.min.js') }}"></script>
-	<script src="{{ asset('backend/assets/js/template.js') }}"></script>
-	<!-- endinject -->
 
-	<!-- Custom js for this page -->
-	<!-- End custom js for this page -->
 
+    <!-- CALL TO ACTION -->
+    <section class="cta-v1 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h2 class="text-uppercase text-white">Looking To Sell Or Rent Your Property?</h2>
+                    <p class="text-capitalize text-white">We Will Assist You In The Best And Comfortable Property
+                        Services
+                        For You
+                    </p>
+
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="btn btn-light text-uppercase ">request a quote
+                        <i class="fa fa-angle-right ml-3 arrow-btn "></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CALL TO ACTION -->
+
+    <!-- Footer  -->
+    <footer>
+        <div class="wrapper__footer bg-theme-footer">
+            <div class="container">
+                <div class="row">
+                    <!-- ADDRESS -->
+                    <div class="col-md-4">
+                        <div class="widget__footer">
+                            <figure>
+                                <img src="images/logo-blue.png" alt="" class="logo-footer">
+                            </figure>
+                            <p>
+                                Rethouse Real Estate is a premium Property template based on Bootstrap 4. Rethouse Real
+                                Estate helped thousands of clients to find the right property for their needs.
+
+                            </p>
+
+                            <ul class="list-unstyled mb-0 mt-3">
+                                <li> <b> <i class="fa fa-map-marker"></i></b><span>214 West Arnold St. New York, NY
+                                        10002</span> </li>
+                                <li> <b><i class="fa fa-phone-square"></i></b><span>(123) 345-6789</span> </li>
+                                <li> <b><i class="fa fa-phone-square"></i></b><span>(+100) 123 456 7890</span> </li>
+                                <li> <b><i class="fa fa-headphones"></i></b><span>support@realvilla.demo</span> </li>
+                                <li> <b><i class="fa fa-clock-o"></i></b><span>Mon - Sun / 9:00AM - 8:00PM</span> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- END ADDRESS -->
+
+                    <!-- QUICK LINKS -->
+                    <div class="col-md-4">
+                        <div class="widget__footer">
+                            <h4 class="footer-title">Quick Links</h4>
+                            <div class="link__category-two-column">
+                                <ul class="list-unstyled ">
+                                    <li class="list-inline-item">
+                                        <a href="#">Commercial</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">business</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">House</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">Residential</a>
+                                    </li>
+
+                                    <li class="list-inline-item">
+                                        <a href="#">Residential Tower</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">Beverly Hills</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">Los angeles</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">The beach</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">Property Listing</a>
+                                    </li>
+
+                                    <li class="list-inline-item">
+                                        <a href="#">Clasic</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">Modern Home</a>
+                                    </li>
+
+                                    <li class="list-inline-item">
+                                        <a href="#">Luxury</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">Beach Pasadena</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END QUICK LINKS -->
+
+
+                    <!-- NEWSLETTERS -->
+                    <div class="col-md-4">
+                        <div class="widget__footer">
+                            <h4 class="footer-title">follow us </h4>
+                            <p class="mb-2">
+                                Follow us and stay in touch to get the latest news
+                            </p>
+                            <p>
+                                <button class="btn btn-social btn-social-o facebook mr-1">
+                                    <i class="fa fa-facebook-f"></i>
+                                </button>
+                                <button class="btn btn-social btn-social-o twitter mr-1">
+                                    <i class="fa fa-twitter"></i>
+                                </button>
+
+                                <button class="btn btn-social btn-social-o linkedin mr-1">
+                                    <i class="fa fa-linkedin"></i>
+                                </button>
+                                <button class="btn btn-social btn-social-o instagram mr-1">
+                                    <i class="fa fa-instagram"></i>
+                                </button>
+
+                                <button class="btn btn-social btn-social-o youtube mr-1">
+                                    <i class="fa fa-youtube"></i>
+                                </button>
+                            </p>
+                            <br>
+                            <h4 class="footer-title">newsletter</h4>
+                            <!-- Form Newsletter -->
+                            <div class="widget__form-newsletter ">
+                                <p>
+
+                                    Don’t miss to subscribe to our news feeds, kindly fill the form below
+                                </p>
+                                <div class="mt-3">
+                                    <input type="text" class="form-control mb-2" placeholder="Your email address">
+
+                                    <button class="btn btn-primary btn-block text-capitalize" type="button">subscribe
+
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- END NEWSLETTER -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="bg__footer-bottom-v1">
+            <div class="container">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-6">
+                        <span>
+                            © 2020 Rethouse Real Estate - Premium real estate & theme &amp; theme by
+                            <a href="#">retenvi.com</a>
+                        </span>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline ">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    privacy
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    contact
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    about
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    faq
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer  -->
+    </footer>
+
+
+
+
+
+
+
+    <!-- SCROLL TO TOP -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- END SCROLL TO TOP -->
+    <script src="./js/index.bundle.js?8918068d71def746395d"></script>
 </body>
+
 </html>
