@@ -44,8 +44,8 @@
 
 
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="{{ asset('site/assets/images/logo-blue-stiky.png') }}" alt="" class="img-fluid">
+        <a class="navbar-brand" href="#">LOGO
+            {{-- <img src="{{ asset('site/assets/images/bg19.jpg') }}" alt="" class="img-fluid"> --}}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav99">
             <span class="navbar-toggler-icon"></span>
@@ -56,6 +56,8 @@
                     <a class="nav-link active " href="#" > Home </a>
 
                 </li>
+
+                <li class="nav-item"><a class="nav-link" href="/contact"> About us</a></li>
 
                 <li class="nav-item"><a class="nav-link" href="/contact"> Services </a></li>
 
