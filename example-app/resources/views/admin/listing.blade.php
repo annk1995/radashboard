@@ -16,7 +16,7 @@
 
             <div class="mb-3">
               <label for="exampleInputEmail3" class="form-label">Location</label>
-              <input type="text" class="form-control" name="location" placeholder="Enter Email">
+              <input type="text" class="form-control" name="location" placeholder="Enter Location">
             </div>
 
             <div class="mb-3">
