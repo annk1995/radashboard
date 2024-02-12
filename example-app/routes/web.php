@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Agentcontroller;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\ListingController;
 use App\Http\Controllers\ProfileController;
@@ -57,5 +58,5 @@ Route::get('/admin/listing',[ListingController::class,'index'])->name('admin.lis
 Route::post('/admin/listing/store',[ListingController::class,'store'])->name('admin.listing.store');
 
 Route::get('/admin/login', [AdminController::class,'AdminLogin'])->name('admin.login');
-
+Route::get('about',[UserController::class,'about'])->name('about');
 
