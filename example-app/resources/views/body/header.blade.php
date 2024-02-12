@@ -64,12 +64,7 @@
 
 
             <!-- Search bar.// -->
-            <ul class="navbar-nav">
-                <li>
-                    <a href="#" class="btn btn-primary text-capitalize">
-                        <i class="fa fa-plus-circle mr-1"></i> add listing</a>
-                </li>
-            </ul>
+
             <!-- Search content bar.// -->
             <div class="top-search navigation-shadow">
                 <div class="container">
