@@ -31,75 +31,7 @@
 
 <body>
     <!-- HEADER -->
-    <header>
-        <!-- NAVBAR TOP -->
-        <div class="topbar d-none d-sm-block">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-sm-12 col-md-5">
-                        <div class="topbar-left">
 
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-7">
-                        <div class="list-unstyled topbar-right">
-                            <ul class="topbar-link">
-
-                                <li><a href="#" title="">Contact Us</a></li>
-                                <li><a href="#" title="">Login / Register</a></li>
-                            </ul>
-                            <ul class="topbar-sosmed">
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END NAVBAR TOP -->
-        <!-- NAVBAR -->
-      @include('body.header')
-        <!-- END NAVBAR -->
-        <!-- BREADCRUMB -->
-        <div class="bg-theme-overlay">
-            <section class="section__breadcrumb ">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-8 text-center">
-                            <h2 class="text-capitalize text-white">login</h2>
-                            <ul class="list-inline ">
-                                <li class="list-inline-item">
-                                    <a href="#" class="text-white">
-                                        home
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="text-white">
-                                        page
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="text-white">
-                                        login
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- END BREADCRUMB -->
-    </header>
     <div class="clearfix"></div>
 
     <!-- LISTING LIST -->

@@ -1,4 +1,48 @@
+
+<div class="topbar d-none d-sm-block">
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-12 col-md-5">
+                <div class="topbar-left">
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-7">
+                <div class="list-unstyled topbar-right">
+                    <ul class="topbar-link">
+
+                        <li><a href="#" title="">Contact Us</a></li>
+                        <li><a href="{{ route('admin.login') }}" title="">Login / Register</a></li>
+                    </ul>
+                    <ul class="topbar-sosmed">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 <nav class="navbar navbar-hover navbar-expand-lg navbar-soft">
+
+
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="{{ asset('site/assets/images/logo-blue-stiky.png') }}" alt="" class="img-fluid">

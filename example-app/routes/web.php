@@ -3,7 +3,9 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Agentcontroller;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\ListingController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Listing;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +20,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $listings = Listing::orderBy('id')->get();
+    return view('home',compact('listings'));
 });
 
 Route::get('/dashboard', function () {
@@ -41,10 +44,12 @@ Route::middleware(['auth','role:admin'])->group(function(){
     Route::post('/admin/update/password', [AdminController::class,'AdminUpdatePassword'])->name('admin.update.password');
 });
 
-
+Route::get('/admin/listing',[ListingController::class,'index'])->name('admin.listing');
+Route::post('/admin/listing/store',[ListingController::class,'store'])->name('admin.listing.store');
 
 Route::middleware(['auth','role:agent'])->group(function(){
 Route::get('/agent/dashboard', [Agentcontroller::class,'AgentDashboard'])->name('agent.dashboard');
 });
 Route::get('/admin/login', [AdminController::class,'AdminLogin'])->name('admin.login');
+
 
