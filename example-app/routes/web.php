@@ -53,10 +53,15 @@ Route::post('/agent/profile/store', [AgentController::class,'AgentProfileStore']
 Route::get('/agent/change/password', [AgentController::class,'AgentChangePassword'])->name('agent.change.password');
 Route::post('/agent/update/password', [AgentController::class,'AgentUpdatePassword'])->name('agent.update.password');
 });
+require __DIR__.'/auth.php';
+Route::middleware(['auth','role:user'])->group(function(){
+    Route::get('home', [UserController::class,'home'])->name('home');
+   });
 
 Route::get('/admin/listing',[ListingController::class,'index'])->name('admin.listing');
 Route::post('/admin/listing/store',[ListingController::class,'store'])->name('admin.listing.store');
 
 Route::get('/admin/login', [AdminController::class,'AdminLogin'])->name('admin.login');
 Route::get('about',[UserController::class,'about'])->name('about');
+
 

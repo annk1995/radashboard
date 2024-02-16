@@ -15,6 +15,7 @@ class RoleCheck
      */
     public function handle(Request $request, Closure $next): Response
     {
+        
 
         $url ='';
         if(auth()->check() && auth()->user()->role ==='admin' ){
@@ -23,7 +24,7 @@ class RoleCheck
             $url='agent/dashboard';
 
         }elseif(auth()->check() && auth()->user()->role ==='user'){
-            $url ='/dashboard';
+            $url ='home';
 
         }
         return $next($request,$url);

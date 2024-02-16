@@ -15,10 +15,22 @@ class Role
      */
     public function handle(Request $request, Closure $next,$role): Response
     {
-        if($request->user()->role !== $role){
-            return redirect('dashboard');
+
+        // if($request->user()->role !== $role){
+        //     return redirect('dashboard');
+
+        // }
+
+        $url ='';
+        if(auth()->check() && auth()->user()->role ==='admin' ){
+            $url='admin/dashboard';
+        }elseif(auth()->check() && auth()->user()->role ==='agent'){
+            $url='agent/dashboard';
+
+        }elseif(auth()->check() && auth()->user()->role ==='user'){
+            $url ='homeurl';
 
         }
-        return $next($request);
+        return $next($request,$url);
     }
 }

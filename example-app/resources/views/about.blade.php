@@ -1,7 +1,32 @@
 @extends('welcome')
 @section('title','About Us')
 @include('body.header')
-@section('content')
+
+<div class="bg-theme-overlay">
+    <section class="section__breadcrumb ">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="text-capitalize text-white">about us</h2>
+                    <ul class="list-inline ">
+                        <li class="list-inline-item">
+                            <a href="{{ route('home') }}" class="text-white">
+                                home
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                about us
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 <section class="home__about bg-light">
     <div class="container">
@@ -278,4 +303,3 @@
 
 <!-- Footer  -->
 
-@endsection

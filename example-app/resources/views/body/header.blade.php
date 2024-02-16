@@ -53,7 +53,7 @@
         <div class="collapse navbar-collapse" id="main_nav99">
             <ul class="navbar-nav  mx-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link active " href="#" > Home </a>
+                    <a class="nav-link active " href="{{ route('home') }}" > Home </a>
 
                 </li>
 
